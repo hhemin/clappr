@@ -24,9 +24,10 @@ module.exports = {
         "sinon": false,
         "xit": false
     },
-    "extends": "node-style-guide",
+    "extends": "eslint:recommended",
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaVersion": 2018,
     },
     "rules": {
         "indent": [
@@ -50,9 +51,11 @@ module.exports = {
         "curly": ["error", "multi-or-nest", "consistent"],
         "object-curly-spacing": ["error", "always"],
         "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "keyword-spacing": "error",
+        "space-before-blocks": "error",
+        "arrow-spacing": "error",
         // part of Node Style-guide but ignored
         "max-len": 0,
         "max-statements": 0,
-        "space-after-keywords": 0
     }
 };
